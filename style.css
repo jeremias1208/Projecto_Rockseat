@@ -33,7 +33,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;*/
-
+  height: 100vh;
   background: var(--bg-url) no-repeat top center/cover;
 }
 
@@ -80,6 +80,10 @@ body {
   left: 0;
   z-index: 1;
   transform: translateY(-12%);
+  animation: slide-back 0.5s;
+}
+#switch button:hover {
+ outline: 5px solid var(--surface-color-hover);
 }
 
 #switch span {
@@ -93,8 +97,7 @@ body {
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+ animation: slide-frent 0.5s forwards;
 }
 #container_ul {
   padding: 24px;
@@ -172,4 +175,23 @@ footer p ion-icon {
   .light{
     --bg-url: url(./assets/bg-desktop-light.jpg);
   }
+}
+
+/*Animação do switch*/
+@keyframes slide-frent{
+ from{
+  left: 0;
+ } 
+ to{
+  left: 50%;
+ }
+}
+
+@keyframes slide-back{
+ from{
+  left: 50%;
+ } 
+ to{
+  left: 0;
+ }
 }
