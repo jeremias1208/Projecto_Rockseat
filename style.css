@@ -158,8 +158,18 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 14;
-  margin-bottom: 32px;
+  
 }
 footer p ion-icon {
   margin-bottom: -3px;
+}
+
+/* Media para alterar a imagem do Background*/
+@media (min-width: 700px){
+  :root{
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light{
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
