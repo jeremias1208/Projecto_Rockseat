@@ -97,7 +97,7 @@ body {
 }
 
 .light #switch button {
- animation: slide-frent 0.5s forwards;
+ animation: slide-frent 0.2s forwards;
 }
 #container_ul {
   padding: 24px;

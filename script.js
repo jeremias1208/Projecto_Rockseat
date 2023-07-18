@@ -6,8 +6,8 @@ function toggleMode(){
   const img = document.querySelector("#profile img")
   //Trocar o tema
   if (htlm.classList.contains("light")) {
-    img.setAttribute("src", "./assets/jeremias.jpg")
+    img.setAttribute("src", "./assets/avatar-light.png")
   } else {
-    img.setAttribute("src", "./assets/jeremy.jpeg")
+    img.setAttribute("src", "./assets/avatar.png")
   }
 }
